@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu+Mono&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #202226;
+    color: #f0f5ff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+main {
+    width: 80vw;
+    height: 80vh;
+    background-color: #19272c;
+    border: 10px #19272c;
+    border-radius: 10px;
+
+    transition: ease 0.5s;
+    animation: 0.4s cubic-bezier(0.24, 0.35, 0.5, 1.28) 0s 1 normal both running uwu;
+
+    overflow: hidden;
+}
+
+main:hover {
+    box-shadow: 0px 0px 18px 8px #7ec5ffe0;
+}
+
+@keyframes uwu {
+    from {
+        transform: translateY(-100vh);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.main-padding {
+    height: 100%;
+    padding: 2% 10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+a {
+    color: #78d6ff;
+}
+
+.owo {
+    --owo-opacity: 100%;
+    animation: 0.6s cubic-bezier(0.15, 0.41, 0.33, 1.15) calc(0.6s + 0.6s * var(--delay)) 1 normal both running whats-this;
+}
+
+@keyframes whats-this {
+    from {
+        transform: translateX(100vw);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: var(--owo-opacity);
+    }
+}
+
+.source {
+    --owo-opacity: 75%;
+}
+
+.end {
+    margin-top: auto;
+    margin-bottom: 5%;
+}
